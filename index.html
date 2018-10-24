@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Bookmarker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="fetchBookmarks"()>
+    <div class= "container">
+        <h3 class="text-muted color-red">SILLY BOOKMARKERS</h3>
+        <div class="jumbotron">
+            <h2>Bookmark Your favorite Site</h2>
+           
+        <form id="myForm">
+            <div clsss="form-group">
+                <label>Site Name</label>
+                <input class="form-control" type="text" name="siteName" id="siteName" placeholder="Enter your website name">
+            </div>
+            <div class="form-group">   
+                <label>Site Url</label>
+                <input class="form-control" type="text" name="sitenUrl" id="siteUrl" placeholder="Enter your website name">
+    
+            </div>
+           <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        
+        </div>
+        <div id="bookmarksResult"></div>
+          <footer>&copy;2018 SILLY BOOKMARKERS</footer>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
